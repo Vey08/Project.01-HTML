@@ -3,64 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!---Font--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Tugas Pemrograman Web</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+    <header class="header">
+        <h2 class="MyProfile">Personal Page</h2>
+        <nav class="navigation">
+            <ul>    
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="home">
-            <h1> Homepage </h1>
-            <p> Nathaniel Harvey Sarjono Dengan NIM 220211060176 </p>
-            <p> Sebagai Mahasiswa di Universitas Sam Ratulangi Manado </p>
+        <section id="home" class="homepage">
+            <div class="homepage-content">
+                <h2>Hello There!</h2>
+                <h1>I'm Nathaniel Harvey Sarjono</h1>
+                <p>Also known as Vey - Undergraduate Student at Sam Ratulangi University, Manado</p>
+                
+                <div class="profile-images">
+                    <img src="profile.png" class="profile">
+                    <img src="graph.png" class="shape">
+                </div>
+            </div>
         </section>
 
-        <section id="gallery">
-            <h1> Gallery </h1>
-            <img src="gallery1.JPG" width="200px" height="200px">
-            <img src="gallery2.JPG" width="200px" height="200px">
-            <img src="gallery3.JPG" width="200px" height="200px">
+        <section id="gallery" class="gallery">
+            <div class="gallery-content">
+                <h1> Gallery </h1>
+                <div class="images">
+                        <img src="gallery1.JPG" class="g1" width="300px" height="400px">
+                        <img src="gallery2.JPG" class="g2" width="300px" height="400px">
+                        <img src="gallery3.jpg" class="g3" width="300px" height="400px">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="blog">
-            <h1> Blog </h1>
-            
-            <article>
-                <h3> Pengaruh Gadget Terhadap Anak Usia Dini </h3>
-                <p> Di era globalisasi, merupakan masa dimana perkembangan IPTEK mengalami perkembangan yang pesat. Masyarakat hidup dengan kemudahan </p>
-                <p> dalam mengakses teknologi di kehidupan... <a href="https://www.kompasiana.com/ruspitamarsiastuti7507/65fce4f6de948f1c8c3d6462/pengaruh-gadget-terhadap-anak-usia-dini">Baca Selengkapnya</a></p>
-            </article>
-
-            <article>
-                <h3> Salah Bantal, Bagaimana Mengobatinya? </h3>
-                <p> Tidur yang berkualitas adalah kunci utama untuk menjaga kesehatan fisik dan mental yang baik. Namun, tidak jarang seseorang mengalami masalah </p>
-                <p> tidur yang tidak menyenangkan yang biasanya disebabkan oleh posisi tidur yang salah. Salah satu penyebab utama... <a href="https://telemed.ihc.id/artikel-detail-1201-Salah-Bantal,-Bagaimana-Mengobatinya.html"> Baca Selengkapnya</a></p>
-            </article>
-
-            <article>
-                <h3> Melampaui Batas: Mahasiswa Ikom Umsida Sabet 3 Kejuaraan di SILAT APIK PTMA 2024 </h3>
-                <p> Selamat! 3 mahasiswa Ikom Umsida berhasil mendapatkan penghargaan pada kompetisi perlombaan yang diselenggarakan oleh Asosiasi Pendidikan Ilmu </p>
-                <p> Komunikasi Perguruan Tinggi Muhammadiyah Aisyiyah (SILAT APIK PTMA) 2024. Kegiatan berlangsung... <a href="https://www.kompasiana.com/indahainiyah9839/65e33c40de948f22672c2ea2/melampaui-batas-mahasiswa-ikom-umsida-sabet-3-kejuaraan-di-silat-apik-ptma-2024"> Baca Selengkapnya</a></p>
-            </article>
+        <section id="blog" class="blog">
+            <div class="blog-content">
+                <h1> Blog </h1>
+                <div class="div-outside">
+                        <div class="div-inside">
+                            <article>
+                                <h3> Pengaruh Gadget Terhadap Anak Usia Dini </h3>
+                                <p> Di era globalisasi, merupakan masa dimana perkembangan IPTEK mengalami perkembangan yang pesat. Masyarakat hidup dengan kemudahan
+                                    dalam mengakses teknologi di kehidupan... <a href="https://www.kompasiana.com/ruspitamarsiastuti7507/65fce4f6de948f1c8c3d6462/pengaruh-gadget-terhadap-anak-usia-dini">Baca Selengkapnya</a>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="div-inside"> 
+                            <article>              
+                                <h3> Salah Bantal, Bagaimana Mengobatinya? </h3>
+                                <p> Tidur yang berkualitas adalah kunci utama untuk menjaga kesehatan fisik dan mental yang baik. Namun, tidak jarang seseorang mengalami masalah
+                                    tidur yang tidak menyenangkan yang biasanya disebabkan oleh posisi tidur yang salah. Salah satu penyebab utama... <a href="https://telemed.ihc.id/artikel-detail-1201-Salah-Bantal,-Bagaimana-Mengobatinya.html"> Baca Selengkapnya</a>
+                                </p>
+                            </article> 
+                        </div>
+                        <div class="div-inside"> 
+                            <article>
+                                <h3> Melampaui Batas: Mahasiswa Ikom Umsida Sabet 3 Kejuaraan di SILAT APIK PTMA 2024 </h3>
+                                <p> Selamat! 3 mahasiswa Ikom Umsida berhasil mendapatkan penghargaan pada kompetisi perlombaan yang diselenggarakan oleh Asosiasi Pendidikan Ilmu
+                                    Komunikasi... <a href="https://www.kompasiana.com/indahainiyah9839/65e33c40de948f22672c2ea2/melampaui-batas-mahasiswa-ikom-umsida-sabet-3-kejuaraan-di-silat-apik-ptma-2024"> Baca Selengkapnya</a>
+                                </p>
+                            </article>
+                        </div> 
+                            
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <section id="contact">
-            <h1> Contact </h1>
-            <h3> Hubungi Saya </h3>
-            <a> Whatsapp 082187436473 - </a>
-            <a> Instagram Avey_8 - </a>
-            <a> Facebook Nathaniel Sarjono </a>
+        <section id="contact" class="contact">
+            <div class="contact-content">
+                <h1> Contact Me </h1>
+                <a class="instagram" href="https://www.instagram.com/avey_8/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a class="facebook" href="https://www.facebook.com/nathaniel.sarjono.9"><i class='bx bxl-facebook-square' ></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/nathaniel-harvey-sarjono-911763292/"><i class='bx bxl-linkedin-square'></i></a>
+                <a class="discord" href="https://discordapp.com/users/463196820030357504"><i class='bx bxl-discord-alt' ></i></i></a>
+            </div>
         </section>
     </footer>
 </body>
